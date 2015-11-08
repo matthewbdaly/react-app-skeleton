@@ -6,6 +6,8 @@ var Link = require('react-router').Link
 var Page = require('./components/page.js');
 
 ReactDOM.render(
-  <Page />,
+  <Router>
+    <Route path="/" component={Page} />
+  </Router>,
   document.getElementById('view')
 );
