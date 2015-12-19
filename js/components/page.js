@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var Page = React.createClass({
-  render: function () {
+export default React.createClass({
+  render() {
     return (
       <div className="page">
         <h1>My Page</h1>
@@ -9,5 +9,3 @@ var Page = React.createClass({
     )
   }
 });
-
-module.exports = Page;
