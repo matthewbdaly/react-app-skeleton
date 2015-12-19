@@ -3,7 +3,7 @@ module.exports = {
     entry: [
       'webpack/hot/only-dev-server',
       "./js/app.js",
-      "./css/main.scss"
+      "./css/style.scss"
     ],
     output: {
         path: __dirname + '/build',
