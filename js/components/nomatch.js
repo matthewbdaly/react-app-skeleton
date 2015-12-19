@@ -6,6 +6,6 @@ export default React.createClass({
       <div className="page">
         <h1>Page Not Found</h1>
       </div>
-    )
+    );
   }
 });

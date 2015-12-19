@@ -6,6 +6,6 @@ export default React.createClass({
       <div className="page">
         <h1>My Page</h1>
       </div>
-    )
+    );
   }
 });
