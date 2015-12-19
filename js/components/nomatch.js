@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var NoMatch = React.createClass({
-  render: function () {
+export default React.createClass({
+  render() {
     return (
       <div className="page">
         <h1>Page Not Found</h1>
@@ -9,5 +9,3 @@ var NoMatch = React.createClass({
     )
   }
 });
-
-module.exports = NoMatch;
