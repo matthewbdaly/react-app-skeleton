@@ -1,10 +1,8 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Router = require('react-router').Router
-var Route = require('react-router').Route
-var Link = require('react-router').Link
-var Page = require('./components/page.js');
-var NoMatch = require('./components/nomatch.js');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route, Link } from 'react-router';
+import Page from './components/page';
+import NoMatch from './components/nomatch';
 
 ReactDOM.render(
   <Router>
