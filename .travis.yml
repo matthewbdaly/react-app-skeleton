@@ -3,5 +3,3 @@ sudo: false
 node_js: 
 - "4.0"
 - "4.1"
-before_install:
- - npm install -g jest-cli
