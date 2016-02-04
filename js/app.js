@@ -4,6 +4,7 @@ import { Router, Route, Link } from 'react-router';
 import Page from './components/page';
 import NoMatch from './components/nomatch';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
+import styles from '../scss/style.scss';
 
 const history = createBrowserHistory();
 

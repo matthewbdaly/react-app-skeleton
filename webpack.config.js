@@ -2,8 +2,7 @@ var webpack = require('webpack');
 module.exports = {  
     entry: [
       'webpack/hot/only-dev-server',
-      "./js/app.js",
-      "./scss/style.scss"
+      "./js/app.js"
     ],
     output: {
         path: __dirname + '/build',
@@ -20,6 +19,8 @@ module.exports = {
         loaders: [
             { test: /\.jsx?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+            { test: /\.woff2?$/, loader: "url-loader?limit=25000" },
+            { test: /\.(eot|svg|ttf)?$/, loader: "file-loader" },
             { test: /\.scss$/, loader: "style!css!sass" }
         ]
     },
@@ -27,6 +28,7 @@ module.exports = {
       configFile: '.eslintrc.yml'
     },
     plugins: [
+      new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin()
     ]
 
